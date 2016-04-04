@@ -4,7 +4,7 @@ body {
 
 header {
     background-color: #f7f7f7;
-    border-top: 1em solid #fff;
+    border-top: 0.5em solid #fff;
 }
 
 #nav_button {
@@ -57,7 +57,7 @@ li {
 
 #logo {
 	border: none;
-	width: 20%;
+	width: 15%;
 }
 
 div > p > a {
@@ -70,6 +70,16 @@ div > p > a:hover {
 
 #top > p {
 	margin: 4em 0 2em 0;
+	line-height: 3em;
+	font-family: 'Raleway', sans-serif;
+}
+
+a > h1 {
+	font-family: 'Raleway', sans-serif;
+}
+
+div > p:last-of-type {
+	font-family: 'Raleway', sans-serif;
 }
 
 h2 {
