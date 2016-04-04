@@ -78,6 +78,11 @@ a > h1 {
 	font-family: 'Raleway', sans-serif;
 }
 
+div > p:first-of-type {
+	font-family: "calluna","Georgia","serif";
+	margin: 2em 0 2em 0;
+}
+
 div > p:last-of-type {
 	font-family: 'Raleway', sans-serif;
 }
@@ -112,8 +117,9 @@ section > div {
 
 #title {
 	font-size: 350%;
-    font-family: "brandon-grotesque","Helvetica-Neue","Helvetica","Arial","san-serif";
+    font-family: 'Raleway', sans-serif;
     margin: 1.5em 0 2em 0;
+    font-weight: bold;
 }
 
 button {
