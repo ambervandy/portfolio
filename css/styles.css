@@ -7,6 +7,11 @@ header {
     border-top: 0.5em solid #fff;
 }
 
+#page {
+	position: relative;
+	z-index: 20;
+}
+
 #nav_button {
 	background: url('https://static.squarespace.com/static/ta/510c979be4b0e3b888b855d2/1352/assets/hamburger.png') 0 0 no-repeat;
     border: none !important;
@@ -76,6 +81,7 @@ div > p > a:hover {
 
 a > h1 {
 	font-family: 'Raleway', sans-serif;
+	color: #23272a;
 }
 
 div > p:first-of-type {
@@ -117,6 +123,7 @@ section > div {
 
 #title {
 	font-size: 350%;
+	color: #23272a;
     font-family: 'Raleway', sans-serif;
     margin: 1.5em 0 2em 0;
     font-weight: bold;
