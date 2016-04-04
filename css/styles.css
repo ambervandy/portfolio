@@ -7,6 +7,11 @@ body {
 	font-family: "Helvetica","Arial","san-serif";
 }
 
+@font-face {
+	font-family: 'fontello';
+	src: url('../fonts/fontello/font/fontello.ttf');
+}
+
 header {
     background-color: #f7f7f7;
     border-top: 0.5em solid #fff;
@@ -29,7 +34,7 @@ header {
     width: 39px;
 }
 
-nav {
+#menu {
     background: #23272a;
     display: block;
     font-size: .8rem;
@@ -38,12 +43,65 @@ nav {
     letter-spacing: 3px;
     line-height: 1.3em;
     position: fixed;
+    display: none;
     right: 0;
+    top: 0;
     text-align: left;
     text-transform: uppercase;
-    top: 0;
-    width: 180px;
+    width: 200px;
+    padding: 1em;
 }
+
+/* Show the menu when animating or visible */
+.animating #menu, .menu-visible #menu {
+	display: block;
+}
+
+/***
+ * If the animating class is present then apply
+ * the CSS transition to #page over 250ms.
+ */
+.animating #page {
+	transition: transform .25s ease-in-out;
+	-webkit-transition: -webkit-transform .25s ease-in-out;
+}
+
+/***
+ * If the left class is present then transform
+ * the #page element 200px to the left.
+ */	
+.animating.left #page {
+  transform: translate3d( -200px, 0, 0 );
+  -webkit-transform: translate3d( -200px, 0, 0 );
+}
+
+/***
+ * If the right class is present then transform
+ * the #page element 200px to the right.
+ */
+.animating.right #page {
+  transform: translate3d( 200px, 0, 0 );
+  -webkit-transform: translate3d( 200px, 0, 0 );
+}
+
+/***
+ * If the menu-visible class is present then
+ * shift the #page 200px from the right edge
+ * via position: absolute to keep it in the 
+ * open position. When .animating, .left and
+ * .right classes are not present the CSS
+ * transform does not apply to #page.
+ */
+.menu-visible #page {
+  right: 200px;
+}
+
+
+#page, #menu {
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+}
+
 
 a {
 	text-decoration: none;
@@ -51,6 +109,7 @@ a {
 
 ul {
 	list-style: none;
+	padding-left: 20%;
 }
 
 ul > a {
@@ -122,8 +181,8 @@ span {
 section > div {
 	background-color: #f7f7f7;
 	text-align: center;
-	padding: 3em 20% 3em 20%;
-	border-width: 0.5em 1em 0.5em 1em;
+	padding: 4em 20% 4em 20%;
+	border-width: 1em 1em 1em 1em;
 	border-color: white;
 	border-style: solid;
 }
@@ -160,3 +219,39 @@ section > div > img {
 	width: 40%;
 	border-radius: 50%;
 }
+
+#contact {
+	font-family: 'fontello';
+	font-size: 1.25em;
+}
+
+
+section  > div:last-of-type {
+	padding-bottom: 7em;
+	margin-bottom: 1.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
