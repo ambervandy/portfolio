@@ -1,3 +1,8 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
 body {
 	font-family: "Helvetica","Arial","san-serif";
 }
@@ -18,14 +23,14 @@ header {
     display: block;
     float: right;
     height: 39px;
-    margin: 15px;
+    margin: 2em 2.5em 2em 2em;
     overflow: hidden;
     text-indent: -9999px;
     width: 39px;
 }
 
 nav {
-    background: #000;
+    background: #23272a;
     display: block;
     font-size: .8rem;
     font-weight: 400;
@@ -116,9 +121,11 @@ span {
 
 section > div {
 	background-color: #f7f7f7;
-	margin: 0 0 1em 0;
 	text-align: center;
 	padding: 3em 20% 3em 20%;
+	border-width: 0.5em 1em 0.5em 1em;
+	border-color: white;
+	border-style: solid;
 }
 
 #title {
