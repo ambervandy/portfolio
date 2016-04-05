@@ -202,7 +202,7 @@ button {
 	border: none;
 	color: white;
 	background-color: #7bc8b3;
-	border-radius: 5%;
+	border-radius: 5px;
 }
 
 button:hover {
@@ -230,6 +230,11 @@ section  > div:last-of-type {
 	padding-bottom: 7em;
 	margin-bottom: 1.5em;
 }
+
+#cat, #week {
+	border: none;
+}
+
 
 
 
