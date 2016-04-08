@@ -52,56 +52,33 @@ header {
     padding: 1em;
 }
 
-/* Show the menu when animating or visible */
 .animating #menu, .menu-visible #menu {
 	display: block;
 }
 
-/***
- * If the animating class is present then apply
- * the CSS transition to #page over 250ms.
- */
 .animating #page {
 	transition: transform .25s ease-in-out;
 	-webkit-transition: -webkit-transform .25s ease-in-out;
 }
 
-/***
- * If the left class is present then transform
- * the #page element 200px to the left.
- */	
 .animating.left #page {
   transform: translate3d( -200px, 0, 0 );
   -webkit-transform: translate3d( -200px, 0, 0 );
 }
 
-/***
- * If the right class is present then transform
- * the #page element 200px to the right.
- */
 .animating.right #page {
   transform: translate3d( 200px, 0, 0 );
   -webkit-transform: translate3d( 200px, 0, 0 );
 }
 
-/***
- * If the menu-visible class is present then
- * shift the #page 200px from the right edge
- * via position: absolute to keep it in the 
- * open position. When .animating, .left and
- * .right classes are not present the CSS
- * transform does not apply to #page.
- */
 .menu-visible #page {
   right: 200px;
 }
-
 
 #page, #menu {
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
 }
-
 
 a {
 	text-decoration: none;
@@ -228,7 +205,7 @@ section > div > img {
 
 section  > div:last-of-type {
 	padding-bottom: 7em;
-	margin-bottom: 1.5em;
+	border-bottom: 2em white solid;
 }
 
 #cat, #week, #wandershare {
